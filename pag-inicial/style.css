@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Estilos do modo claro (padrão) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Estilos do modo escuro */
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar,
+body.dark-mode footer {
+    background-color: #333333;
+}
+
+body.dark-mode .card {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+/* Estilo do botão de modo escuro */
+#dark-mode-toggle {
+    border: none;
+    background-color: #343a40;
+    color: #ffffff;
+    font-size: 1rem; /* Tamanho da fonte ajustado */
+    width: 40px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
+    border-radius: 50%; /* Borda arredondada */
+    padding: 0; /* Remover espaçamento interno */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+}
+
+#dark-mode-toggle:hover {
+    background-color: #495057; /* Cor de fundo ao passar o mouse */
+}
+
+.banner {
+    background-image: url('img/Vigor’s\ Gamer.NOVO.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+#logo {
+    height: 50px; /* Ajuste a altura da logo conforme necessário */
+    width: auto;  /* Mantém a proporção da imagem */
+}
+
+
+.titulo-principal {
+    margin-top: 80px; 
+    font-size: 3rem; 
+    margin-bottom: 20px; 
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.5rem;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3%;
+    background-color: #000;
+}
+
+footer > p {
+    padding: 0%;
+}
+
+#product-list {
+    margin-top: 30px;
+}

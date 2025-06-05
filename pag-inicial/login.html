@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Vigor's Gamer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/imagem-logo.jpg" alt="Logo Vigor's Gamer" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Carrinho <span id="cart-count" class="badge bg-success">0</span></a>
+                    </li>
+                    <li class="nav-item d-none" id="user-info">
+                        <a class="nav-link" href="#">Bem-vindo, <span id="username-display"></span></a>
+                    </li>
+                    <li class="nav-item d-none" id="logout-item">
+                        <a class="nav-link" href="#" onclick="logout()">Logout</a>
+                    </li>
+                    <li class="nav-item" id="login-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item" id="register-item">
+                        <a class="nav-link" href="cadastro.html">Cadastrar-se</a>
+                    </li>
+                    <!-- Botão de Modo Escuro -->
+                    <li class="nav-item">
+                        <button id="dark-mode-toggle" class="btn btn-dark btn-sm rounded-circle ms-3">🌙</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="container my-5">
+        <h2 class="text-center">Login</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="login-form">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Usuário:</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Senha:</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <button type="reset" class="btn btn-secondary">Limpar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Vigor's Gamer</strong>
+                <small>Agora</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div id="toast-body" class="toast-body">
+                Mensagem de Toast
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white p-3">
+        <p>&copy; 2024 Vigor's Gamer - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+body {
+    background-image: url('img/Cópia\ de\ Vigor’s\ Gamer.jpg'); /* Caminho da sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Faz com que a imagem não se mova ao rolar a página */
+    color: #000000; /* Cor do texto para manter contraste */
+}
